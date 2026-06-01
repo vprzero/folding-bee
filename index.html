@@ -334,7 +334,7 @@
       <a href="#vip">Membership</a>
       <a href="#gifts">Gifts</a>
     </div>
-    <a href="#book" class="btn">Book a fold <span class="arr">→</span></a>
+    <a href="#book" class="btn">Request a fold <span class="arr">→</span></a>
   </div>
 </nav>
 
@@ -525,20 +525,13 @@
 
 <section id="book" class="bg-shell">
   <div class="wrap center">
-    <p class="label center reveal">Booking</p>
-    <h2 class="reveal" style="margin-top:14px">Reserve your first fold.</h2>
-    <p class="reveal" style="color:var(--ink-soft);max-width:520px;margin:14px auto 0">Pick a time that works for you and we'll see you there. Prefer to talk first? Send a note below instead.</p>
-    <div class="book-card reveal" style="text-align:center;padding:clamp(36px,4.5vw,56px)">
-      <div style="font-size:2rem;margin-bottom:8px">🐝</div>
-      <h3 style="font-family:var(--serif);font-weight:400;font-size:1.7rem;margin-bottom:10px">Find a time on the calendar</h3>
-      <p style="color:var(--ink-soft);max-width:430px;margin:0 auto 28px">See live availability and lock in your visit. It drops straight onto our schedule, and you'll get a confirmation by email.</p>
-      <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0u-4C_hvT_EqZOTSD7BQH7h0-fvSFXYOVGkcdy7riZYpdxK8vVbcOmbuppHWcy9zaVTtF7Y-lj" target="_blank" rel="noopener" class="btn">Choose your time <span class="arr">→</span></a>
-    </div>
-    <div class="book-or reveal"><span>or send a note instead</span></div>
+    <p class="label center reveal">Get in touch</p>
+    <h2 class="reveal" style="margin-top:14px">Request your fold.</h2>
+    <p class="reveal" style="color:var(--ink-soft);max-width:520px;margin:14px auto 0">Tell us a little about your home and what you need. We'll text you back to find a time that works — no rush, no pressure.</p>
     <div class="book-card reveal">
       <form id="book-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-        <input type="hidden" name="subject" value="New Folding Bee booking request 🐝">
+        <input type="hidden" name="subject" value="New Folding Bee inquiry 🐝">
         <input type="hidden" name="from_name" value="Folding Bee Website">
         <input type="checkbox" name="botcheck" tabindex="-1" style="display:none" aria-hidden="true">
         <div class="row">
@@ -555,8 +548,8 @@
           </div>
         </div>
         <div class="field"><label>Anything we should know?</label><textarea name="notes" placeholder="Preferred days, the size of your home, special requests…"></textarea></div>
-        <div class="center"><button type="submit" class="btn">Send my request <span class="arr">→</span></button></div>
-        <div id="book-msg">🐝 Thank you — we've got your request and will text you within a day to confirm your spot.</div>
+        <div class="center"><button type="submit" class="btn">Send my inquiry <span class="arr">→</span></button></div>
+        <div id="book-msg">🐝 Thank you — we've got your request and will text you shortly to find a time.</div>
         <div id="book-err" style="display:none;text-align:center;padding:16px;color:#b4513a;font-weight:600;margin-top:6px">Hmm, that didn't send. Please try again in a moment.</div>
       </form>
     </div>
